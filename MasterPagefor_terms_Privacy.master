@@ -1,0 +1,105 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPagefor_terms_Privacy.master.cs" Inherits="MasterPagefor_terms_Privacy" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    
+    <title>medeexpress</title>
+     <asp:ContentPlaceHolder id="ContentPlaceHolder3" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1
+        {
+            
+           width: 1400px;
+height: 100%;
+margin:0px;
+padding:0px;
+        }
+        </style>
+    
+</head>
+<body>
+    <form id="form2" runat="server" style="vertical-align:middle;">
+    <div class="auto-style1" >
+    
+        <asp:Image ID="Image1" runat="server" Height="86px" ImageUrl="~/images/poorni1.png" Width="445px" style="z-index: 1; left: 122px; top: 11px; position: absolute" />
+        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/login.aspx" style="z-index: 1; left: 1005px; top: 48px; position: absolute" Font-Size="Large" ForeColor="#003399">Login</asp:HyperLink>
+        <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/images/main/button_sign-up.png" style="z-index: 1; left: 1086px; top: 44px; position: absolute; height: 36px; width: 106px;" OnClick="ImageButton1_Click" />
+        <div class="auto-style1" 
+            style="height: 80px; background-color: #C2C285; z-index: 1; left: 10px; top: 99px; position: absolute; width: 1402px;">
+            
+            <asp:ImageButton ID="Button1" runat="server" BackColor="#49B8E6" 
+                BorderColor="White" BorderStyle="None" Font-Size="Medium" ForeColor="White" 
+                Height="37px" style="z-index: 1; left: 25px; top: 20px; position: absolute" 
+                Text="#medeExpress100hrs" Width="192px" 
+                ImageUrl="~/images/main/button_medeexpresshrs.png" onclick="Button1_Click" />
+            <asp:HyperLink ID="HyperLink8" runat="server" Font-Size="Medium" ForeColor="#0033CC" style="z-index: 1; left: 445px; top: 27px; position: absolute; width: 90px; right: 867px;" NavigateUrl="~/home.aspx" Font-Bold="True">medeexpress</asp:HyperLink>
+           <asp:HyperLink ID="HyperLink2" runat="server" Font-Size="Medium" ForeColor="#0033CC" style="z-index: 1; left: 563px; top: 27px; position: absolute" NavigateUrl="~/online-doctors-directory.aspx" Font-Bold="True">Doctors</asp:HyperLink>
+         <asp:HyperLink ID="HyperLink3" runat="server" Font-Size="Medium" ForeColor="#0033CC" style="z-index: 1; left: 644px; top: 28px; position: absolute" NavigateUrl="~/ask-a-doctor-online.aspx" Font-Bold="True" >Ask a Doctor Online</asp:HyperLink>
+            <asp:HyperLink ID="HyperLink4" runat="server" Font-Size="Medium" ForeColor="#0033CC" style="z-index: 1; left: 820px; top: 28px; position: absolute" NavigateUrl="~/phone-a-doctor.aspx" Font-Bold="True"> Phone a Doctor</asp:HyperLink>
+              <asp:HyperLink ID="HyperLink5" runat="server" Font-Size="Medium" ForeColor="#0033CC" style="z-index: 1; left: 966px; top: 28px; position: absolute" NavigateUrl="~/video-chat-with-doctor.aspx" Font-Bold="True" > Video Chat </asp:HyperLink>
+            <asp:HyperLink ID="HyperLink6" runat="server" Font-Size="Medium" ForeColor="#0033CC" style="z-index: 1; left: 1075px; top: 28px; position: absolute" NavigateUrl="~/articles.aspx" Font-Bold="True"> Articles</asp:HyperLink>
+         <asp:HyperLink ID="HyperLink7" runat="server" Font-Size="Medium" ForeColor="#0033CC" style="z-index: 1; left: 1149px; top: 28px; position: absolute" NavigateUrl="~/qa.aspx" Font-Bold="True"> Q&A</asp:HyperLink>
+        </div>
+    <div>
+      
+        <table class="auto-style1" style="vertical-align:middle;">
+            <tr>
+                
+                <td><table class="auto-style1">
+             <tr>
+                <td >       
+         </td>
+                
+            </tr>
+            <tr>
+                 <td>&nbsp;</td>
+                <td>  &nbsp;</td>
+                
+            </tr>
+            
+            
+            
+            
+            
+            <tr>
+                <td style="height: 850px;width: 50px;"> 
+                    &nbsp;</td>
+                
+                <td>
+                     <!--Chat button will appear here-->
+<div id="MyLiveChatContainer"></div>
+
+<!--Add the following script at the bottom of the web page (before </body></html>)-->
+<script type="text/javascript" async="async" defer="defer" data-cfasync="false" src="https://mylivechat.com/chatbutton.aspx?hccid=43535384"></script>
+                    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+                    &nbsp;</td>
+            </tr>
+        </table></td>
+            </tr>
+          
+        </table>
+        
+        </div>
+        
+    </div>
+      
+    </form>
+    
+           <!--Add the following script at the bottom of the web page (immediately before the </body> tag)-->
+<script type="text/javascript" async="async" defer="defer" data-cfasync="false" src="https://mylivechat.com/chatinline.aspx?hccid=43535384"></script>    
+     
+     <!--Add the following script at the bottom of the web page (before </body></html>)-->
+<script type="text/javascript" async="async" defer="defer" data-cfasync="false" src="https://mylivechat.com/chatwidget.aspx?hccid=43535384"></script> 
+      
+        
+       
+        
+        </body>
+</html>

@@ -1,0 +1,9 @@
+<table>
+<tr>
+<td style="width: 350px">
+</td>
+<td>
+</td>
+</tr>
+</table>
+INSERT INTO [PowerConsumption].[dbo].[master2node50] (Date, Amps)SELECT Date, Amps FROM [PowerConsumption].[dbo].[master1node20];

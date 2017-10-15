@@ -1,0 +1,1061 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="masterPharmacy.master.cs" Inherits="masterPharmacy" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+   
+    <title>medeexpress</title>
+     <asp:ContentPlaceHolder id="ContentPlaceHolder3" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1
+        {
+            
+             width: 100%;
+height: 100%;
+        }
+        .auto-style2
+        {
+           
+             
+            width: 305px;
+        }
+        .auto-style3
+        {
+            
+            
+            width: 100px;
+            height: 23px;
+        }
+        .auto-style4
+        {
+           
+             
+            height: 23px;
+        }
+        #divtab1
+        {
+            z-index: 1;
+            left: 219px;
+            top: 507px;
+            position: absolute;
+            height: 413px;
+            width: 1014px;
+        }
+        .auto-style5
+        {
+            width: 155px;
+            height: 30px;
+        }
+        .auto-style6
+        {
+            width: 96%;
+        }
+        .auto-style7
+        {
+            width: 203px;
+            height: 30px;
+        }
+        .auto-style8
+        {
+            width: 229px;
+            height: 30px;
+        }
+        .auto-style9
+        {
+            width: 439px;
+        }
+        .auto-style11
+        {
+            width: 155px;
+            height: 36px;
+        }
+        .auto-style13
+        {
+            width: 293px;
+        }
+        .auto-style14
+        {
+            width: 152px;
+            height: 30px;
+        }
+        .auto-style15
+        {
+            width: 152px;
+            height: 36px;
+        }
+        .auto-style16
+        {
+            height: 40px;
+            width: 56px;
+        }
+        .auto-style17
+        {
+            width: 56px;
+            height: 36px;
+        }
+        .auto-style18
+        {
+            width: 339px;
+        }
+        .auto-style1
+        {
+            
+           width: 1400px;
+height: 100%;
+margin:0px;
+padding:0px;
+        }
+         .customhover a
+    {
+              background-color: #CC33FF;
+    }
+    .customhover a:hover
+    {
+        background-color: #CCFFFF;
+        color:Black;
+          border:solid 1px black;
+       
+    }
+        </style>
+     <script language="javascript" type="text/javascript">
+         function ShowHide(i) {
+
+             document.getElementById('divtab2').style.visibility = 'hidden';
+
+             if (i == 1) {
+
+                 document.getElementById('divtab2').style.visibility = 'hidden';
+                 document.getElementById('divtab1').style.visibility = 'visible';
+             }
+
+             if (i == 2) {
+
+                 document.getElementById('divtab1').style.visibility = 'hidden';
+                 document.getElementById('divtab2').style.visibility = 'visible';
+             }
+         }
+         function hideDiv() {
+             if (document.getElementById) {
+                 document.getElementById('divshow').style.visibility = 'hidden';
+             }
+         }
+         function showDiv() {
+             if (document.getElementById) {
+                 document.getElementById('divshow').style.visibility = 'visible';
+             }
+         }
+         function hideDivOTC() {
+             if (document.getElementById) {
+                 document.getElementById('divotc').style.visibility = 'hidden';
+             }
+         }
+         function showDivOTC() {
+             if (document.getElementById) {
+                 document.getElementById('divotc').style.visibility = 'visible';
+             }
+         }
+         function hideDivDIABETES() {
+             if (document.getElementById) {
+                 document.getElementById('divDIABETES').style.visibility = 'hidden';
+             }
+         }
+         function showDivDIABETES() {
+             if (document.getElementById) {
+                 document.getElementById('divDIABETES').style.visibility = 'visible';
+             }
+         }
+         function hidedivBABYMOTHER() {
+             if (document.getElementById) {
+                 document.getElementById('divBABYMOTHER').style.visibility = 'hidden';
+             }
+         }
+         function showdivBABYMOTHER() {
+             if (document.getElementById) {
+                 document.getElementById('divBABYMOTHER').style.visibility = 'visible';
+             }
+         }
+         function hidedivPERSONALCARE() {
+             if (document.getElementById) {
+                 document.getElementById('divPERSONALCARE').style.visibility = 'hidden';
+             }
+         }
+         function showdivPERSONALCARE() {
+             if (document.getElementById) {
+                 document.getElementById('divPERSONALCARE').style.visibility = 'visible';
+             }
+         }
+         function hidedivWELLNESS() {
+             if (document.getElementById) {
+                 document.getElementById('divWELLNESS').style.visibility = 'hidden';
+             }
+         }
+         function showdivWELLNESS() {
+             if (document.getElementById) {
+                 document.getElementById('divWELLNESS').style.visibility = 'visible';
+             }
+         }
+         function hidedivPERSONALCARE() {
+             if (document.getElementById) {
+                 document.getElementById('divPERSONALCARE').style.visibility = 'hidden';
+             }
+         }
+         function showdivPERSONALCARE() {
+             if (document.getElementById) {
+                 document.getElementById('divPERSONALCARE').style.visibility = 'visible';
+             }
+         }
+         function hidedivWELLNESS() {
+             if (document.getElementById) {
+                 document.getElementById('divWELLNESS').style.visibility = 'hidden';
+             }
+         }
+         function showdivWELLNESS() {
+             if (document.getElementById) {
+                 document.getElementById('divWELLNESS').style.visibility = 'visible';
+             }
+         }
+         function hidedivHEALTHAID() {
+             if (document.getElementById) {
+                 document.getElementById('divHEALTHAID').style.visibility = 'hidden';
+             }
+         }
+         function showdivHEALTHAID() {
+             if (document.getElementById) {
+                 document.getElementById('divHEALTHAID').style.visibility = 'visible';
+             }
+         }
+</script>  
+</head>
+<body onload="javascript:hideDiv();hideDivOTC();hideDivDIABETES();hidedivBABYMOTHER();hidedivPERSONALCARE();hidedivWELLNESS();hidedivHEALTHAID();">
+    <form id="form2" runat="server" style="vertical-align:middle;">
+        <div id="div5" 
+                        style="background-color: #FFFFFF; width: 1335px; height: 20px; z-index: 1; left: 12px; top: 583px; position: absolute;"  
+                        onmouseover="javascript:hideDiv();hideDivOTC();hideDivDIABETES();hidedivBABYMOTHER();hidedivPERSONALCARE();hidedivWELLNESS();hidedivHEALTHAID();">
+         </div>
+        <div id="div2" 
+                        style="background-color: #FFFFFF; width: 150px; height: 20px; z-index: 1; left: 1137px; top: 134px; position: absolute;"  
+                        
+                        
+                        
+                        onmouseover="javascript:hideDiv();hideDivOTC();hideDivDIABETES();hidedivBABYMOTHER();hidedivPERSONALCARE();hidedivWELLNESS();hidedivHEALTHAID();">
+         </div>
+        <div id="div1" 
+                        style="background-color: #FFFFFF; width: 183px; height: 20px; z-index: 1; left: 234px; top: 140px; position: absolute;"  
+                        
+             onmouseover="javascript:hideDiv();hideDivOTC();hideDivDIABETES();hidedivBABYMOTHER();hidedivPERSONALCARE();hidedivWELLNESS();hidedivHEALTHAID();">
+         </div>
+    <div class="auto-style1" >
+            <div id="div3" 
+                        style="background-color: #FFFFFF; width: 1085px; height: 20px; z-index: 1; left: 262px; top: 113px; position: absolute;"  
+                        onmouseover="javascript:hideDiv();hideDivOTC();hideDivDIABETES();hidedivBABYMOTHER();hidedivPERSONALCARE();hidedivWELLNESS();hidedivHEALTHAID();">
+         </div>
+           
+        <asp:Image ID="Image1" runat="server" Height="86px" ImageUrl="~/images/poorni1.png" Width="445px" style="z-index: 1; left: 122px; top: 11px; position: absolute" />
+        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/login.aspx" style="z-index: 1; left: 1051px; top: 48px; position: absolute" Font-Size="Large" ForeColor="#003399">Login</asp:HyperLink>
+        <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/images/main/button_sign-up.png" style="z-index: 1; left: 1116px; top: 44px; position: absolute; height: 36px; width: 106px;" OnClick="ImageButton1_Click" />
+        <div class="auto-style1" 
+            style="height: 80px; background-color: #C2C285; z-index: 1; left: 10px; top: 99px; position: absolute; width: 1402px;">
+            <div class="divAreaTabs"  runat="server" id="tabs" aria-disabled="True"  >
+    <%--<ul>
+ 
+    <li id="tab1" class="activeTab" onmouseover="ShowHide('1');"><a href="#">Tab 1</a></li>
+    <li id="tab2" onmouseover="ShowHide('2');"><a href="#">Tab 2</a></li>
+    <div style="clear: both;"></div>
+</ul>--%>
+  
+    <div style="clear: both; background-color: #FFFFFF;" aria-disabled="True"></div>
+
+<div class="divAreaTabsContent">
+    <%--<div id="div1" onclick="ShowHide('1');" style="background-color: #CC33FF">--%>
+<div id="divshow"  style="background-color: #3399FF; z-index: 1; left: 179px; top: 67px; position: absolute; height: 410px; width: 1057px;">
+      <table class="auto-style6">
+              <tr>
+                  <td class="auto-style9" style="vertical-align:top;">
+                      <table  cellpadding=0 cellspacing=0  runat="server" id="XP">
+            <tr>
+                <td colspan="2" style="background-color: #000000; color: #3399FF; font-size: large; font-weight: bold">
+                    BY CONDITIONS
+                    </td>
+                </tr>
+  
+            <tr  >
+                <td class="auto-style7" valign="middle" style="font-size: Medium; font-weight: bold">
+                    <asp:HyperLink ID="HyperLink9" runat="server">Acid Reducers/Acid Reflux Medications </asp:HyperLink>
+                   
+                </td>
+                <td  valign="middle"  style="font-size: Medium; font-weight: bold" class="auto-style8" >
+                    <asp:HyperLink ID="HyperLink10" runat="server">Cold & Flu Medications </asp:HyperLink>
+                     
+                </td>
+            </tr>
+            <tr valign="middle">
+                <td class="auto-style7" valign="middle" style="font-size: Medium; font-weight: bold">
+                     <asp:HyperLink ID="HyperLink11" runat="server">Acne</asp:HyperLink>
+                  
+                </td>
+                <td style="font-size: Medium; font-weight: bold" class="auto-style8">
+                    <asp:HyperLink ID="HyperLink12" runat="server">Constipation/Laxatives</asp:HyperLink>
+                    
+                </td>
+            </tr>
+            <tr valign="middle">
+                <td class="auto-style7" style="font-size: Medium; font-weight: bold" >
+                      <asp:HyperLink ID="HyperLink13" runat="server">Allergies</asp:HyperLink>
+                    
+                </td>
+                <td style="font-size: Medium; font-weight: bold" class="auto-style8" >
+                     <asp:HyperLink ID="HyperLink14" runat="server"> Diabetes Medications</asp:HyperLink>
+                   
+                </td>
+            </tr>
+            <tr valign="middle">
+                <td class="auto-style7" style="font-size: Medium; font-weight: bold">
+                       <asp:HyperLink ID="HyperLink15" runat="server">Analgesics/Pain Relievers</asp:HyperLink>
+                    
+                </td>
+                <td style="font-size: Medium; font-weight: bold" class="auto-style8" >
+                     <asp:HyperLink ID="HyperLink16" runat="server"> Ed/Impotence  </asp:HyperLink>
+                 
+                </td>
+        
+            </tr>
+            <tr valign="middle">
+                <td class="auto-style7" style="font-size: Medium; font-weight: bold">
+                     <asp:HyperLink ID="HyperLink17" runat="server"> Anti-Convulsants </asp:HyperLink>
+                  
+                </td>
+                <td style="font-size: Medium; font-weight: bold" class="auto-style8" >
+                     <asp:HyperLink ID="HyperLink18" runat="server">  Hypertension/High Blood Pressure  </asp:HyperLink>
+                  
+                </td>
+            </tr>
+            <tr valign="middle">
+                <td style="font-size: Medium; font-weight: bold" class="auto-style7">
+                     <asp:HyperLink ID="HyperLink19" runat="server">   Anti-Depressants  </asp:HyperLink>
+                  
+                </td>
+                <td style="font-size: Medium; font-weight: bold" class="auto-style8" >
+                    <asp:HyperLink ID="HyperLink20" runat="server">   Hyperthyroidism Medications </asp:HyperLink>
+                    
+                </td>
+            </tr>
+            <tr valign="middle">
+                <td style="font-size: Medium; font-weight: bold" class="auto-style7">
+                     <asp:HyperLink ID="HyperLink21" runat="server"> Anti-Histamines </asp:HyperLink>
+                   
+                </td>
+                <td style="font-size: Medium; font-weight: bold" class="auto-style8" >
+                     <asp:HyperLink ID="HyperLink22" runat="server"> Hypothyroidism Medications </asp:HyperLink>
+                    
+                </td>
+            </tr>
+            <tr valign="middle">
+                <td style="font-size: Medium; font-weight: bold" class="auto-style7">
+                      <asp:HyperLink ID="HyperLink23" runat="server"> Anti-Itch Medications </asp:HyperLink>
+                  
+                </td>
+                <td style="font-size: Medium; font-weight: bold" class="auto-style8">
+                    <asp:HyperLink ID="HyperLink24" runat="server">  Osteoporosis </asp:HyperLink>
+                   
+                </td>
+            </tr>
+            <tr valign="middle">
+                <td class="auto-style7" style="font-size: Medium; font-weight: bold">
+                    <asp:HyperLink ID="HyperLink25" runat="server">   Anti-Spasmodics </asp:HyperLink>
+                  
+                </td>
+                <td style="font-size: Medium; font-weight: bold" class="auto-style8" >
+                     <asp:HyperLink ID="HyperLink26" runat="server">  Skin Diseases </asp:HyperLink>
+                    
+                </td>
+            </tr>
+            <tr valign="middle">
+                <td class="auto-style7" style="font-size: Medium; font-weight: bold">
+                     <asp:HyperLink ID="HyperLink27" runat="server">   Anti-Tuberculosis (Tb) Medications </asp:HyperLink>
+                 
+                </td>
+                <td style="font-size: Medium; font-weight: bold" class="auto-style8" >
+                    <asp:HyperLink ID="HyperLink28" runat="server">   Vasodilating Agents </asp:HyperLink>
+                    
+                </td>
+            </tr>
+
+            <tr valign="middle">
+                <td class="auto-style7" style="font-size: Medium; font-weight: bold">
+                     <asp:HyperLink ID="HyperLink29" runat="server">    Antibiotics </asp:HyperLink>
+                  
+                </td>
+                <td style="font-size: Medium; font-weight: bold" class="auto-style8"> 
+                      <asp:HyperLink ID="HyperLink30" runat="server">    Weight Loss/Obesity Medications  </asp:HyperLink>
+                   
+                </td>
+            </tr>
+            <tr valign="middle">
+                <td class="auto-style7" style="font-size: Medium; font-weight: bold">
+                    <asp:HyperLink ID="HyperLink31" runat="server">     Asthma Medications  </asp:HyperLink>
+                  
+                </td>
+                <td style="font-size: Medium; font-weight: bold" align="right" class="auto-style8">
+                    
+                    <asp:Button ID="Button2"  runat="server" BackColor="Black" BorderStyle="None" Font-Bold="True" ForeColor="#3399FF" Text="VIEW ALL" />
+                    
+                </td>
+            </tr>
+          </table></td>
+                  <td style="vertical-align:top;" class="auto-style13">
+                      <table  cellpadding=0 cellspacing=0  runat="server" id="Table1">
+               
+            <tr >
+                <td colspan="2" style="background-color: #000000; color: #3399FF; font-size: large; font-weight: bold">
+                      BY MANUFACTURER
+                    </td>
+                </tr>
+  
+            <tr  >
+               
+
+                <td class="auto-style5" valign="middle" style="font-size: Medium; font-weight: bold">
+                     <asp:HyperLink ID="HyperLink32" runat="server">      Abbott Health Care </asp:HyperLink>
+                 
+                </td>
+                <td  valign="middle"  style="font-size: Medium; font-weight: bold" class="auto-style14" >
+                     Ranbaxy
+
+                </td>
+            </tr>
+            <tr valign="middle">
+                <td class="auto-style5" valign="middle" style="font-size: Medium; font-weight: bold">
+                    <asp:HyperLink ID="HyperLink33" runat="server"> Abbott Health Care Solutions</asp:HyperLink>
+                
+
+                </td>
+                <td style="font-size: Medium; font-weight: bold" class="auto-style14">
+                     <asp:HyperLink ID="HyperLink34" runat="server"> Sun Pharma</asp:HyperLink>
+                  
+
+                </td>
+            </tr>
+            <tr valign="middle">
+                <td class="auto-style5" style="font-size: Medium; font-weight: bold" >
+                    <asp:HyperLink ID="HyperLink35" runat="server"> Abbott India</asp:HyperLink>
+                  
+
+                </td>
+                <td style="font-size: Medium; font-weight: bold" class="auto-style14" >
+                     <asp:HyperLink ID="HyperLink36" runat="server"> Torrent Pharma</asp:HyperLink>
+                  
+
+                </td>
+            </tr>
+            <tr valign="middle">
+                <td class="auto-style5" style="font-size: Medium; font-weight: bold">
+                    <asp:HyperLink ID="HyperLink37" runat="server">  Glaxosmithkline Pharma</asp:HyperLink>
+                  
+                </td>
+                <td style="font-size: Medium; font-weight: bold" class="auto-style14" >
+                    <asp:HyperLink ID="HyperLink38" runat="server">Usv</asp:HyperLink>
+                   
+                </td>
+        
+            </tr>
+            <tr valign="middle">
+                <td class="auto-style5" style="font-size: Medium; font-weight: bold">
+                     <asp:HyperLink ID="HyperLink39" runat="server"> Glenmark Pharma</asp:HyperLink>
+                
+
+                </td>
+                <td style="font-size: Medium; font-weight: bold" class="auto-style14" >
+                     <asp:HyperLink ID="HyperLink40" runat="server"> Win Medicare</asp:HyperLink>
+                   
+
+                </td>
+            </tr>
+            <tr valign="middle">
+                <td style="font-size: Medium; font-weight: bold" class="auto-style5">
+                    <asp:HyperLink ID="HyperLink41" runat="server">  Intas Pharma</asp:HyperLink>
+                 
+
+                </td>
+                <td style="font-size: Medium; font-weight: bold" class="auto-style14" >
+                    <asp:HyperLink ID="HyperLink42" runat="server">Wyeth Pharma</asp:HyperLink>
+                     
+
+                </td>
+            </tr>
+            <tr valign="middle">
+                <td style="font-size: Medium; font-weight: bold" class="auto-style5">
+                    <asp:HyperLink ID="HyperLink43" runat="server"> Johnson & Johnson</asp:HyperLink>
+                 
+
+                </td>
+                <td style="font-size: Medium; font-weight: bold" class="auto-style14" >
+                    <asp:HyperLink ID="HyperLink44" runat="server"> Alembic Pharma</asp:HyperLink>
+                    
+
+                </td>
+            </tr>
+            <tr valign="middle">
+                <td style="font-size: Medium; font-weight: bold" class="auto-style5">
+                       <asp:HyperLink ID="HyperLink45" runat="server"> Lupin</asp:HyperLink>
+                 
+                </td>
+                <td style="font-size: Medium; font-weight: bold" class="auto-style14">
+                      <asp:HyperLink ID="HyperLink46" runat="server">  Allergan</asp:HyperLink>
+                 
+
+                </td>
+            </tr>
+                         
+
+
+
+            <tr valign="middle">
+                <td class="auto-style5" style="font-size: Medium; font-weight: bold">
+                     <asp:HyperLink ID="HyperLink47" runat="server"> Mano Pharma</asp:HyperLink>
+                  
+                </td>
+                <td style="font-size: Medium; font-weight: bold" class="auto-style14" >
+                      <asp:HyperLink ID="HyperLink48" runat="server">  Aventis Pharma</asp:HyperLink>
+                  
+
+                </td>
+            </tr>
+            <tr valign="middle">
+                <td class="auto-style5" style="font-size: Medium; font-weight: bold">
+                    <asp:HyperLink ID="HyperLink49" runat="server"> Nicholas Piramal</asp:HyperLink>
+                  
+                </td>
+                <td style="font-size: Medium; font-weight: bold" class="auto-style14" >
+                       <asp:HyperLink ID="HyperLink50" runat="server"> Cipla</asp:HyperLink>
+               
+   
+                </td>
+            </tr>
+
+            <tr valign="middle">
+                <td class="auto-style5" style="font-size: Medium; font-weight: bold">
+                    <asp:HyperLink ID="HyperLink51" runat="server"> German Remedies</asp:HyperLink>
+                
+                </td>
+                <td style="font-size: Medium; font-weight: bold" class="auto-style14"> 
+                      <asp:HyperLink ID="HyperLink52" runat="server">Dr Reddy's</asp:HyperLink>
+                   
+                </td>
+            </tr>
+            <tr valign="middle">
+                <td class="auto-style11" style="font-size: Medium; font-weight: bold">
+                  
+                </td>
+                <td style="font-size: Medium; font-weight: bold" align="right" class="auto-style15">
+                    
+                    <asp:Button ID="Button3"  runat="server" BackColor="Black" BorderStyle="None" Font-Bold="True" ForeColor="#3399FF" Text="VIEW ALL" />
+                    
+                </td>
+            </tr>
+          </table></td>
+                  <td style="vertical-align:top;" class="auto-style18"><table  cellpadding=0 cellspacing=0  runat="server" id="Table2">
+               
+            <tr >
+                <td colspan="6" style="background-color: #000000; color: #3399FF; font-size: medium; font-weight: bold">
+                  
+                    SEARCH ALPHABETICALLY
+                    </td>
+                </tr>
+  
+            <tr  >
+               
+
+                <td  valign="middle" style="font-size: Medium; font-weight: bold;Height:40px; Width:40px;" >
+                  <asp:Button ID="Button4"  runat="server" BackColor="Black" BorderStyle="None" Font-Bold="True" ForeColor="#3399FF" Text="A" Height="30px" Width="34px" />
+                </td>
+                <td  valign="middle" style="font-size: Medium; font-weight: bold;Height:40px; Width:40px;">
+                  <asp:Button ID="Button5"  runat="server" BackColor="Black" BorderStyle="None" Font-Bold="True" ForeColor="#3399FF" Text="B" Height="30px" Width="34px" />
+                </td>
+                <td  valign="middle" style="font-size: Medium; font-weight: bold;Height:40px; Width:40px;">
+                  <asp:Button ID="Button6"  runat="server" BackColor="Black" BorderStyle="None" Font-Bold="True" ForeColor="#3399FF" Text="C" Height="30px" Width="34px" />
+                </td>
+                <td valign="middle" style="font-size: Medium; font-weight: bold;Height:40px; Width:40px;">
+                  <asp:Button ID="Button7"  runat="server" BackColor="Black" BorderStyle="None" Font-Bold="True" ForeColor="#3399FF" Text="D" Height="30px" Width="34px" />
+                </td>
+                <td  valign="middle" style="font-size: Medium; font-weight: bold;Height:40px; Width:40px;">
+                  <asp:Button ID="Button8"  runat="server" BackColor="Black" BorderStyle="None" Font-Bold="True" ForeColor="#3399FF" Text="E" Height="30px" Width="34px"/>
+                </td>
+                <td  valign="middle" style="font-size: Medium; font-weight: bold;" class="auto-style16">
+                    &nbsp;</td>
+            </tr>
+             <tr  >
+               
+
+                <td  valign="middle" style="font-size: Medium; font-weight: bold;Height:40px; Width:40px;" >
+                  <asp:Button ID="Button10"  runat="server" BackColor="Black" BorderStyle="None" Font-Bold="True" ForeColor="#3399FF" Text="F" Height="30px" Width="34px" />
+                </td>
+                <td  valign="middle" style="font-size: Medium; font-weight: bold;Height:40px; Width:40px;">
+                  <asp:Button ID="Button11"  runat="server" BackColor="Black" BorderStyle="None" Font-Bold="True" ForeColor="#3399FF" Text="G" Height="30px" Width="34px" />
+                </td>
+                <td  valign="middle" style="font-size: Medium; font-weight: bold;Height:40px; Width:40px;">
+                  <asp:Button ID="Button12"  runat="server" BackColor="Black" BorderStyle="None" Font-Bold="True" ForeColor="#3399FF" Text="H" Height="30px" Width="34px" />
+                </td>
+                <td valign="middle" style="font-size: Medium; font-weight: bold;Height:40px; Width:40px;">
+                  <asp:Button ID="Button13"  runat="server" BackColor="Black" BorderStyle="None" Font-Bold="True" ForeColor="#3399FF" Text="I" Height="30px" Width="34px" />
+                </td>
+                <td  valign="middle" style="font-size: Medium; font-weight: bold;Height:40px; Width:40px;">
+                  <asp:Button ID="Button14"  runat="server" BackColor="Black" BorderStyle="None" Font-Bold="True" ForeColor="#3399FF" Text="J" Height="30px" Width="34px"/>
+                </td>
+                <td  valign="middle" style="font-size: Medium; font-weight: bold;" class="auto-style16">
+                    &nbsp;</td>
+            </tr>
+                       <tr  >
+               
+
+                <td  valign="middle" style="font-size: Medium; font-weight: bold;Height:40px; Width:40px;" >
+                  <asp:Button ID="Button16"  runat="server" BackColor="Black" BorderStyle="None" Font-Bold="True" ForeColor="#3399FF" Text="K" Height="30px" Width="34px" />
+                </td>
+                <td  valign="middle" style="font-size: Medium; font-weight: bold;Height:40px; Width:40px;">
+                  <asp:Button ID="Button17"  runat="server" BackColor="Black" BorderStyle="None" Font-Bold="True" ForeColor="#3399FF" Text="L" Height="30px" Width="34px" />
+                </td>
+                <td  valign="middle" style="font-size: Medium; font-weight: bold;Height:40px; Width:40px;">
+                  <asp:Button ID="Button18"  runat="server" BackColor="Black" BorderStyle="None" Font-Bold="True" ForeColor="#3399FF" Text="M" Height="30px" Width="34px" />
+                </td>
+                <td valign="middle" style="font-size: Medium; font-weight: bold;Height:40px; Width:40px;">
+                  <asp:Button ID="Button19"  runat="server" BackColor="Black" BorderStyle="None" Font-Bold="True" ForeColor="#3399FF" Text="N" Height="30px" Width="34px" />
+                </td>
+                <td  valign="middle" style="font-size: Medium; font-weight: bold;Height:40px; Width:40px;">
+                  <asp:Button ID="Button20"  runat="server" BackColor="Black" BorderStyle="None" Font-Bold="True" ForeColor="#3399FF" Text="O" Height="30px" Width="34px"/>
+                </td>
+                <td  valign="middle" style="font-size: Medium; font-weight: bold;" class="auto-style16">
+                    &nbsp;</td>
+            </tr>
+                       <tr  >
+               
+
+                <td  valign="middle" style="font-size: Medium; font-weight: bold;Height:40px; Width:40px;" >
+                  <asp:Button ID="Button22"  runat="server" BackColor="Black" BorderStyle="None" Font-Bold="True" ForeColor="#3399FF" Text="P" Height="30px" Width="34px" />
+                </td>
+                <td  valign="middle" style="font-size: Medium; font-weight: bold;Height:40px; Width:40px;">
+                  <asp:Button ID="Button23"  runat="server" BackColor="Black" BorderStyle="None" Font-Bold="True" ForeColor="#3399FF" Text="Q" Height="30px" Width="34px" />
+                </td>
+                <td  valign="middle" style="font-size: Medium; font-weight: bold;Height:40px; Width:40px;">
+                  <asp:Button ID="Button24"  runat="server" BackColor="Black" BorderStyle="None" Font-Bold="True" ForeColor="#3399FF" Text="R" Height="30px" Width="34px" />
+                </td>
+                <td valign="middle" style="font-size: Medium; font-weight: bold;Height:40px; Width:40px;">
+                  <asp:Button ID="Button25"  runat="server" BackColor="Black" BorderStyle="None" Font-Bold="True" ForeColor="#3399FF" Text="S" Height="30px" Width="34px" />
+                </td>
+                <td  valign="middle" style="font-size: Medium; font-weight: bold;Height:40px; Width:40px;">
+                  <asp:Button ID="Button26"  runat="server" BackColor="Black" BorderStyle="None" Font-Bold="True" ForeColor="#3399FF" Text="T" Height="30px" Width="34px"/>
+                </td>
+                <td  valign="middle" style="font-size: Medium; font-weight: bold;" class="auto-style16">
+                    &nbsp;</td>
+            </tr>
+                       <tr  >
+               
+
+                <td  valign="middle" style="font-size: Medium; font-weight: bold;Height:40px; Width:40px;" >
+                  <asp:Button ID="Button28"  runat="server" BackColor="Black" BorderStyle="None" Font-Bold="True" ForeColor="#3399FF" Text="U" Height="30px" Width="34px" />
+                </td>
+                <td  valign="middle" style="font-size: Medium; font-weight: bold;Height:40px; Width:40px;">
+                  <asp:Button ID="Button29"  runat="server" BackColor="Black" BorderStyle="None" Font-Bold="True" ForeColor="#3399FF" Text="V" Height="30px" Width="34px" />
+                </td>
+                <td  valign="middle" style="font-size: Medium; font-weight: bold;Height:40px; Width:40px;">
+                  <asp:Button ID="Button30"  runat="server" BackColor="Black" BorderStyle="None" Font-Bold="True" ForeColor="#3399FF" Text="W" Height="30px" Width="34px" />
+                </td>
+                <td valign="middle" style="font-size: Medium; font-weight: bold;Height:40px; Width:40px;">
+                  <asp:Button ID="Button31"  runat="server" BackColor="Black" BorderStyle="None" Font-Bold="True" ForeColor="#3399FF" Text="X" Height="30px" Width="34px" />
+                </td>
+                <td  valign="middle" style="font-size: Medium; font-weight: bold;Height:40px; Width:40px;">
+                  <asp:Button ID="Button32"  runat="server" BackColor="Black" BorderStyle="None" Font-Bold="True" ForeColor="#3399FF" Text="Y" Height="30px" Width="34px"/>
+                </td>
+                <td  valign="middle" style="font-size: Medium; font-weight: bold;" class="auto-style16">
+                    &nbsp;</td>
+            </tr>
+                        <tr  >
+               
+
+                <td  valign="middle" style="font-size: Medium; font-weight: bold;Height:40px; Width:40px;" >
+                  <asp:Button ID="Button9"  runat="server" BackColor="Black" BorderStyle="None" Font-Bold="True" ForeColor="#3399FF" Text="Z" Height="30px" Width="34px" />
+                </td>
+                
+            </tr>
+            <tr valign="middle" >
+                <td class="auto-style11" style="font-size: Medium; font-weight: bold" colspan="5" align="right">
+                  
+                    <asp:Button ID="Button15"  runat="server" BackColor="Black" BorderStyle="None" Font-Bold="True" ForeColor="#3399FF" Text="VIEW ALL" />
+                    
+                </td>
+                <td style="font-size: Medium; font-weight: bold" align="right" class="auto-style17">
+                    
+                    &nbsp;</td>
+            </tr>
+          </table></td>
+              </tr>
+        </table>
+        
+        
+          </div>
+     <%-- <div id="divshow" 
+                        
+             style="background-color: #66FFFF; width: 519px; height: 202px; z-index: 1; left: 333px; top: 513px; position: absolute;">
+         </div>--%>
+         <div id="divotc" 
+             style="background-color: #3399FF; width: 147px; height: 129px; z-index: 1; left: 620px; top: 73px; position: absolute;">
+           
+                      <table  cellpadding=0 cellspacing=0  runat="server" id="Table3">
+                          <tr  >
+                
+                <td  valign="middle"  style="font-size: Medium; font-weight: bold" class="auto-style8" >
+                     <asp:HyperLink ID="HyperLink53" runat="server"> First Aid</asp:HyperLink>
+                   
+                </td>
+            </tr>
+                        <tr  >
+                
+                <td  valign="middle"  style="font-size: Medium; font-weight: bold" class="auto-style8" >
+                     <asp:HyperLink ID="HyperLink54" runat="server"> Health Care </asp:HyperLink>
+                  
+                </td>
+            </tr>
+            <tr valign="middle">
+                <td class="auto-style7" valign="middle" style="font-size: Medium; font-weight: bold">
+                     <asp:HyperLink ID="HyperLink55" runat="server">  Health Care </asp:HyperLink>
+                
+                </td>
+                
+            </tr>
+            <tr valign="middle">
+                <td class="auto-style7" style="font-size: Medium; font-weight: bold" >
+                     <asp:HyperLink ID="HyperLink56" runat="server">Womens Care</asp:HyperLink>
+                  
+                </td>
+                
+            </tr>
+          
+          </table>
+         </div>
+         <div id="divDIABETES" 
+             style="background-color: #3399FF; width: 176px; height: 108px; z-index: 1; left: 663px; top: 73px; position: absolute;">
+             <table  cellpadding=0 cellspacing=0  runat="server" id="Table4">
+                          <tr  >
+                
+                <td  valign="middle"  style="font-size: Medium; font-weight: bold" class="auto-style8" >
+                     <asp:HyperLink ID="HyperLink57" runat="server">Blood Glucose Monitors & Strips</asp:HyperLink>
+                   
+                </td>
+            </tr>
+                        <tr  >
+                
+                <td  valign="middle"  style="font-size: Medium; font-weight: bold" class="auto-style8" >
+                     <asp:HyperLink ID="HyperLink61" runat="server">Food & Beverages</asp:HyperLink>
+                 
+                </td>
+            </tr>
+            <tr valign="middle">
+                <td class="auto-style7" valign="middle" style="font-size: Medium; font-weight: bold">
+                    <asp:HyperLink ID="HyperLink62" runat="server">Nutrition & Supplements</asp:HyperLink>
+                
+                </td>
+                
+            </tr>
+            
+          
+          </table>
+         </div>
+           <div id="divBABYMOTHER" 
+             style="background-color: #3399FF; width: 198px; height: 79px; z-index: 1; left: 742px; top: 73px; position: absolute;">
+               <table  cellpadding=0 cellspacing=0  runat="server" id="Table5">
+                          <tr  >
+                
+                <td  valign="middle"  style="font-size: Medium; font-weight: bold" class="auto-style8" >
+                     <asp:HyperLink ID="HyperLink64" runat="server">  Baby & Infant</asp:HyperLink>
+              
+                </td>
+            </tr>
+                        <tr  >
+                
+                <td  valign="middle"  style="font-size: Medium; font-weight: bold" class="auto-style8" >
+                     <asp:HyperLink ID="HyperLink66" runat="server">Maternity & Mother Care</asp:HyperLink>
+                 
+                </td>
+            </tr>
+          
+            
+          
+          </table>
+         </div>
+         <div id="divPERSONALCARE" 
+             style="background-color: #3399FF; width: 283px; height: 202px; z-index: 1; left: 862px; top: 72px; position: absolute;">
+             <table  cellpadding=0 cellspacing=0  runat="server" id="Table6">
+                          <tr  >
+                
+                <td  valign="middle"  style="font-size: Medium; font-weight: bold" class="auto-style8" >
+                    <asp:HyperLink ID="HyperLink68" runat="server"> Body Care</asp:HyperLink>
+              
+                </td>
+                               <td  valign="middle"  style="font-size: Medium; font-weight: bold" class="auto-style8" >
+                                   <asp:HyperLink ID="HyperLink69" runat="server">  Mens Need</asp:HyperLink>
+               
+                </td>
+            </tr>
+                        <tr  >
+                
+                <td  valign="middle"  style="font-size: Medium; font-weight: bold" class="auto-style8" >
+                    <asp:HyperLink ID="HyperLink70" runat="server"> Eye Care</asp:HyperLink>
+               
+                </td>
+                              <td  valign="middle"  style="font-size: Medium; font-weight: bold" class="auto-style8" >
+                                    <asp:HyperLink ID="HyperLink71" runat="server">  Nail Care</asp:HyperLink>
+                
+                </td>
+            </tr>
+          
+            
+                        <tr  >
+                
+                <td  valign="middle"  style="font-size: Medium; font-weight: bold" class="auto-style8" >
+                      <asp:HyperLink ID="HyperLink72" runat="server">  Facial Kit</asp:HyperLink>
+              
+                </td>
+                              <td  valign="middle"  style="font-size: Medium; font-weight: bold" class="auto-style8" >
+                                    <asp:HyperLink ID="HyperLink73" runat="server"> Oral Care</asp:HyperLink>
+                
+                </td>
+            </tr>
+               <tr  >
+                
+                <td  valign="middle"  style="font-size: Medium; font-weight: bold" class="auto-style8" >
+                      <asp:HyperLink ID="HyperLink74" runat="server">Hair Care</asp:HyperLink>
+              
+                </td>
+                              <td  valign="middle"  style="font-size: Medium; font-weight: bold" class="auto-style8" >
+                                   <asp:HyperLink ID="HyperLink75" runat="server">Skin Care</asp:HyperLink>
+                
+                </td>
+            </tr>
+                     <tr  >
+                
+                <td  valign="middle"  style="font-size: Medium; font-weight: bold" class="auto-style8" >
+                     <asp:HyperLink ID="HyperLink76" runat="server">Hand & Foot Care</asp:HyperLink>
+              
+                </td>
+                              <td  valign="middle"  style="font-size: Medium; font-weight: bold" class="auto-style8" >
+                                   <asp:HyperLink ID="HyperLink77" runat="server"> Womens Need</asp:HyperLink>
+          
+                </td>
+            </tr>
+                     <tr  >
+                
+                <td  valign="middle"  style="font-size: Medium; font-weight: bold" class="auto-style8" >
+                     <asp:HyperLink ID="HyperLink78" runat="server"> Lip Care</asp:HyperLink>
+           
+                </td>
+                              <td  valign="middle"  style="font-size: Medium; font-weight: bold" class="auto-style8" >
+           
+                </td>
+            </tr>
+          </table>
+         </div>
+         <div id="divWELLNESS" 
+             style="background-color: #3399FF; width: 176px; height: 92px; z-index: 1; left: 978px; top: 70px; position: absolute;">
+             <table  cellpadding=0 cellspacing=0  runat="server" id="Table7">
+                          <tr  >
+                
+                <td  valign="middle"  style="font-size: Medium; font-weight: bold" class="auto-style8" >
+                    <asp:HyperLink ID="HyperLink79" runat="server"> Fitness</asp:HyperLink>
+              
+                </td>
+            </tr>
+                        <tr  >
+                
+                <td  valign="middle"  style="font-size: Medium; font-weight: bold" class="auto-style8" >
+                      <asp:HyperLink ID="HyperLink80" runat="server"> Speciality</asp:HyperLink>
+              
+             
+                </td>
+            </tr>
+          
+              <tr  >
+                
+                <td  valign="middle"  style="font-size: Medium; font-weight: bold" class="auto-style8" >
+                      <asp:HyperLink ID="HyperLink81" runat="server">  Supplements</asp:HyperLink>
+            
+                </td>
+            </tr>
+          
+          </table>
+         </div>
+           <div id="divHEALTHAID"
+             style="background-color: #3399FF; width: 226px; height: 95px; z-index: 1; left: 890px; top: 73px; position: absolute;">
+               <table  cellpadding=0 cellspacing=0  runat="server" id="Table8">
+                          <tr  >
+                
+                <td  valign="middle"  style="font-size: Medium; font-weight: bold" class="auto-style8" >
+                     <asp:HyperLink ID="HyperLink82" runat="server">Health Monitor & Equipments</asp:HyperLink>
+              
+                </td>
+            </tr>
+                        <tr  >
+                
+                <td  valign="middle"  style="font-size: Medium; font-weight: bold" class="auto-style8" >
+                     <asp:HyperLink ID="HyperLink83" runat="server">Ortho Support</asp:HyperLink>
+               
+                </td>
+            </tr>
+             <tr  >
+                
+                <td  valign="middle"  style="font-size: Medium; font-weight: bold" class="auto-style8" >
+                    <asp:HyperLink ID="HyperLink84" runat="server"> Senior Care & Aids</asp:HyperLink>
+          
+                </td>
+            </tr>
+            
+          
+          </table>
+         </div>
+         <div id="div4" 
+                        style="background-color: #FFFFFF; width: 183px; height: 20px; z-index: 1; left: 380px; top: 492px; position: absolute;"  
+                        
+             onmouseover="javascript:hideDiv();hideDivOTC();hideDivDIABETES();hidedivBABYMOTHER();hidedivPERSONALCARE();hidedivWELLNESS();hidedivHEALTHAID();">
+         </div>
+          <div id="divtab2" style="background-color: #FFFFFF">
+        <%--<table  cellpadding=0 cellspacing=0  runat="server" id="win7">
+                 <tr valign="top">
+                <td >
+                   
+                </td>
+            </tr>
+        </table>--%>
+        </div>
+</div>
+<script language="javascript" type="text/javascript">
+    ShowHide();
+</script>
+</div>
+             <div onmouseover="ShowHide('1');" onmouseout ="ShowHide('2');"style="height:437px; width:1195px; z-index: 1; left: 42px; top: 18px; position: absolute;">
+            <asp:ImageButton ID="Button1" runat="server" BackColor="#49B8E6" 
+                BorderColor="White" BorderStyle="None" Font-Size="Medium" ForeColor="White" 
+                Height="37px" style="z-index: 1; left: 3px; top: -21px; position: absolute" 
+                Text="#medeExpress100hrs" Width="192px" 
+                ImageUrl="~/images/main/button_medeexpresshrs.png" onclick="Button1_Click" />
+           <asp:HyperLink ID="HyperLink2" runat="server" Font-Size="Medium" ForeColor="#0033CC" style="z-index: 1; left: 371px; top: 18px; position: absolute" NavigateUrl="~/home.aspx" Font-Bold="True">medeexpress</asp:HyperLink>
+           <asp:HyperLink ID="HyperLink90" runat="server" Font-Size="Medium" ForeColor="#0033CC" style="z-index: 1; left: 475px; top: 19px; position: absolute; right: 635px; height: 17px;" NavigateUrl="~/Prescription.aspx" Font-Bold="True">Prescription</asp:HyperLink>
+         <asp:HyperLink ID="HyperLink3" runat="server" Font-Size="Medium" ForeColor="#0033CC" style="z-index: 1; left: 572px; top: 19px; position: absolute" NavigateUrl="~/OTC.aspx" Font-Bold="True" >OTC</asp:HyperLink>
+            <asp:HyperLink ID="HyperLink4" runat="server" Font-Size="Medium" ForeColor="#0033CC" style="z-index: 1; left: 620px; top: 19px; position: absolute" NavigateUrl="~/Diabetes.aspx" Font-Bold="True" >Diabetes</asp:HyperLink>
+              <asp:HyperLink ID="HyperLink5" runat="server" Font-Size="Medium" ForeColor="#0033CC" style="z-index: 1; left: 694px; top: 19px; position: absolute" NavigateUrl="~/Baby_Mother.aspx" Font-Bold="True" >Baby &amp; Mother</asp:HyperLink>
+            <asp:HyperLink ID="HyperLink6" runat="server" Font-Size="Medium" ForeColor="#0033CC" style="z-index: 1; left: 816px; top: 18px; position: absolute" NavigateUrl="~/PersonalCare.aspx" Font-Bold="True" >Personal Care</asp:HyperLink>
+         <asp:HyperLink ID="HyperLink7" runat="server" Font-Size="Medium" ForeColor="#0033CC" style="z-index: 1; left: 926px; top: 18px; position: absolute" NavigateUrl="~/Wellness.aspx" Font-Bold="True" > Wellness</asp:HyperLink>
+            <asp:HyperLink ID="HyperLink8" runat="server" Font-Size="Medium" ForeColor="#0033CC" style="z-index: 1; left: 1003px; top: 17px; position: absolute; width: 73px;" NavigateUrl="~/HealthAid.aspx" Font-Bold="True" >Health Aid</asp:HyperLink>
+        </div>
+    <div>
+      
+        <table class="auto-style1" style="vertical-align:middle;">
+            <tr>
+                
+                <td><table class="auto-style1">
+             <tr>
+                <td >       
+         </td>
+                
+            </tr>
+            <tr>
+                 <td>&nbsp;</td>
+                <td>  
+                    &nbsp;</td>
+                
+            </tr>
+            
+            
+            
+            
+            
+            <tr >
+                <td style="height: 850px;width: 100px;"> 
+                    <div style="z-index: 1; left: 16px; top: 194px; position: absolute; height: 900px; width: 167px; border-right-style: solid; border-right-width: 1px; border-right-color: #336699;">
+                     <table class="auto-style2" style="color: #336699">
+        <tr style="border-style: none none solid none; border-width: 0px 0px 1px 0px; border-color: #0066CC;vertical-align:top;">
+            <td colspan="2" style="border-style: none none solid none; border-width: 0px 0px 0px 0px; border-color: #336699; width: 275px; height: 25px;"><span style="color: rgb(65, 65, 70); font-family: Camphor; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: bold; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"></span></td>
+            
+        </tr>
+        <tr >
+            <td class="auto-style4" style="border-width: 0px 0px 0px 0px; width: 275px; height: 25px;border-color: #336699; border-bottom-style: solid;">
+               
+            </td>
+            <%--<td class="auto-style5" rowspan="6" style="border-left-style: solid; border-left-width: 1px; border-left-color: #336699"></td>--%>
+        </tr>
+        <tr>
+            <td class="auto-style4" style="border-width: 0px 0px 0px 0px; width: 275px; height: 25px;border-color: #336699; border-bottom-style: solid;">
+                
+            </td>
+            
+        </tr>
+        <tr>
+            <td class="auto-style4" style="border-width: 0px 0px 0px 0px; width: 275px; height: 25px;border-color: #0066CC; border-bottom-style: solid;">
+               
+            </td>
+            
+        </tr>
+        <tr>
+            <td class="auto-style4" style="border-width: 0px 0px 0px 0px; width: 275px; height: 25px;border-color: #0066CC; border-bottom-style: solid;">
+               
+            </td>
+           
+        </tr>
+        <tr>
+            <td class="auto-style4" style="border-width: 0px 0px 0px 0px; width: 275px; height: 25px;border-color: #336699; border-bottom-style: solid;">
+               
+            </td>
+            
+        </tr>
+           <tr>
+            <td class="auto-style4" style="border-width: 0px 0px 0px 0px; width: 275px; height: 25px;border-color: #336699; border-bottom-style: solid;">
+               
+               </td>
+            
+        </tr>
+    </table>
+                       
+                        </div>
+                    &nbsp;</td>
+                
+                <td>
+                      <!--Chat button will appear here-->
+<div id="MyLiveChatContainer"></div>
+
+<!--Add the following script at the bottom of the web page (before </body></html>)-->
+<script type="text/javascript" async="async" defer="defer" data-cfasync="false" src="https://mylivechat.com/chatbutton.aspx?hccid=43535384"></script>
+                    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+                    &nbsp;</td>
+            </tr>
+        </table></td>
+            </tr>
+           <tr>
+           <td>
+               &nbsp;</td>
+           </tr>
+        </table>
+        
+        </div>
+        
+    </div>
+      
+            <asp:HyperLink ID="HyperLink91" runat="server" NavigateUrl="~/ask-a-doctor-online.aspx" style="z-index: 1; left: 609px; top: 46px; position: absolute" Font-Size="Large" ForeColor="#003300">Consult online</asp:HyperLink>
+        
+        <asp:HyperLink ID="HyperLink92" runat="server" NavigateUrl="~/view_medical_records.aspx" style="z-index: 1; left: 733px; top: 48px; position: absolute" Font-Size="Large" ForeColor="#003300">View medical records</asp:HyperLink>
+        <asp:HyperLink ID="HyperLink93" runat="server" NavigateUrl="~/online_pharmacy.aspx" style="z-index: 1; left: 914px; top: 48px; position: absolute" Font-Size="Large" ForeColor="#006600">Order medicines</asp:HyperLink>
+                       
+    </form>
+    
+    <!--Add the following script at the bottom of the web page (immediately before the </body> tag)-->
+<script type="text/javascript" async="async" defer="defer" data-cfasync="false" src="https://mylivechat.com/chatinline.aspx?hccid=43535384"></script>    
+     
+     <!--Add the following script at the bottom of the web page (before </body></html>)-->
+<script type="text/javascript" async="async" defer="defer" data-cfasync="false" src="https://mylivechat.com/chatwidget.aspx?hccid=43535384"></script>    
+     
+        
+       
+        
+        </body>
+</html>

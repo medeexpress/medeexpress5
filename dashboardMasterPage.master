@@ -1,0 +1,82 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="dashboardMasterPage.master.cs" Inherits="dashboardMasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 1370px;
+        }
+    </style>
+</head>
+<body>
+    <form id="Form1" runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+             <asp:Image ID="Image1" runat="server" ImageUrl="~/images/grburst.gif"  style="width:960px;Height:10px; "/>  
+           
+                    <asp:Image ID="Image3" runat="server" ImageUrl="~/images/poorni.png" 
+                    Width="688px" Height="88px"  />  
+                 <asp:Image ID="Image2" runat="server" ImageUrl="~/images/g_left_toright.gif"  style="width:960px;Height:10px; "/>   
+            </div>
+      
+            <div class="clear hideSkiplink">
+      
+                  <table>
+<tr>
+<%--<td style="width: 170px; "> --%>
+
+ <td>
+       
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>                  
+                       
+                        <asp:MenuItem NavigateUrl="~/home.aspx" Text="Home"/>
+                         <asp:MenuItem NavigateUrl="~/About.aspx" Text="Profile"/>
+                          <asp:MenuItem NavigateUrl="~/TechnicalDetailsofCCMS.aspx" Text="CCMS Details"/>
+                         <asp:MenuItem NavigateUrl="~/Furtherareafocused.aspx" Text="Area focused"/>
+                          <asp:MenuItem NavigateUrl="~/Training.aspx" Text="Training"/>
+                          <asp:MenuItem NavigateUrl="~/Media.aspx" Text="Media"/>                         
+                            <asp:MenuItem NavigateUrl="~/Career.aspx" Text="Career"/>
+                          <asp:MenuItem NavigateUrl="~/Contact_us.aspx" Text="Contact"/>                     
+                            <asp:MenuItem NavigateUrl="~/ccmsloginpage" Text="CCMS Dash Board Login"/> 
+                    </Items>
+                </asp:Menu>
+                  </td>
+        </tr>
+         </table>
+            </div>
+        </div>
+      
+        <table>
+<tr>
+<td style="width:150px; height: 1000px; vertical-align:top; border-right-style: ridge; border-right-width: 1px; border-right-color: #E7FFE7;">
+<div class="main">
+            <asp:ContentPlaceHolder ID="nodecontent" runat="server"/>
+</td>
+<td  style="vertical-align:top" align="center">
+  <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+</td>
+</tr>
+</table>
+
+       
+        
+        <div class="clear">
+        </div>
+  
+    <div class="footer">
+        
+    </div>
+    </form>
+</body>
+</html>
